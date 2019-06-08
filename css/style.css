@@ -842,6 +842,22 @@
 	font-weight: bold;
 }
 
+.DHcolor{
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+
+.CYcolor{
+	background-color: #f76454;
+	font-weight: bold;
+	color: white;
+}
+
+.TYcolor{
+	background-color: #a0c4f2;
+	font-weight:bold;
+}
 img.dp{
 	max-width: 100%;
 	width: 350px;
