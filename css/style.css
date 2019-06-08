@@ -822,12 +822,24 @@
 .MMcolor{
 	background-color: #e4979d;
 	font-weight: bold;
+	color: white;
 }
 
 .SNcolor{
 	background-color: #7c62a3;
 	font-weight: bold;
 	color: white;
+}
+
+.JHcolor{
+	background-color: #eb8038;
+	font-weight: bold;
+	color: white;
+}
+
+.MNcolor{
+	background-color: #87c5c0;
+	font-weight: bold;
 }
 
 img.dp{
@@ -840,7 +852,7 @@ img.dp{
 	  background-color: #ffffff;
 	  border: 1px solid black;
 	  opacity: 0.9;
-	  filter: alpha(opacity=60); /* For IE8 and earlier */
+	  filter: alpha(opacity=60);
 	}
 
 	.transbox p {
