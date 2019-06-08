@@ -804,18 +804,36 @@
 	text-align: center;
 
 }
+
 .facts{
 	font-family: 'Open Sans';
 	font-weight: 500;
 }
-.Nayeoncolor{
+.NYcolor{
 	background-color: #5dbed7;
 	font-weight: bold;
 }
 
-.dp{
+.JYcolor{
+	background-color: #c5d073;
+	font-weight: bold;
+}
+
+.MMcolor{
+	background-color: #e4979d;
+	font-weight: bold;
+}
+
+.SNcolor{
+	background-color: #7c62a3;
+	font-weight: bold;
+	color: white;
+}
+
+img.dp{
 	max-width: 100%;
-	height: 50%;
+	width: 350px;
+	height: auto;
 }
 	.transbox {
 	  margin: 20px;
