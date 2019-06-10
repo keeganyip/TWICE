@@ -368,7 +368,7 @@
 			padding-left: 2.7em;
 		}
 
-/* Tables */
+/* Tables*/
 
 	table {
 		width: 100%;
@@ -379,7 +379,8 @@
 		}
 
 			table.default tbody tr {
-				border-bottom: solid 1px #82b440;
+				text-align: center;
+				border: solid 5px #FF2965;
 			}
 
 			table.default td {
@@ -389,7 +390,7 @@
 			table.default th {
 				font-weight: 700;
 				padding: 0.5em 1em 0.5em 1em;
-				text-align: left;
+				text-align: center;
 			}
 
 			table.default thead {
@@ -809,6 +810,7 @@
 	font-family: 'Open Sans';
 	font-weight: 500;
 }
+/* Profile Colours */
 .NYcolor{
 	background-color: #5dbed7;
 	font-weight: bold;
@@ -882,4 +884,43 @@ img.dp{
 	max-width: 20%;
 	 height: auto;
 	 width: auto;
+}
+/* Accordion */
+.accordion {
+  background-color: #FF2965;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+	font-weight: bold;
+}
+
+.activeACC, .accordion:hover {
+  background-color: #eb8038;
+}
+
+.accordion:after {
+  content: '\2c5';
+  font-size: 20px;
+  color: black;
+  float: right;
+  margin-left: 5px;
+}
+
+.activeACC:after {
+  content: "\2c4"; /* Unicode character for "minus" sign (-) */
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: black;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+	text-align: center;
 }
