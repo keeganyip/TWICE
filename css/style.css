@@ -35,8 +35,9 @@
 	}
 
 	a {
-		color: #82b440;
+		color: black;
 		text-decoration: underline;
+		text-decoration-color: black;
 	}
 
 	strong, b {
@@ -143,7 +144,7 @@
 		-ms-appearance: none;
 		appearance: none;
 		background: none;
-		border: solid 1px #82b440;
+		border: solid 3px #FBCEB1;
 		color: inherit;
 		display: block;
 		outline: 0;
@@ -156,7 +157,7 @@
 		input[type="password"]:focus,
 		input[type="email"]:focus,
 		textarea:focus {
-			border-color: #82b440;
+			border-color: #FF2965;
 		}
 
 	input[type="text"],
@@ -372,6 +373,7 @@
 
 	table {
 		width: 100%;
+		border-collapse: collapse;
 	}
 
 		table.default {
@@ -380,10 +382,11 @@
 
 			table.default tbody tr {
 				text-align: center;
-				border: solid 5px #FF2965;
+				border: solid 3px #FF2965;
 			}
 
 			table.default td {
+				font-weight: 600;
 				padding: 0.5em 1em 0.5em 1em;
 			}
 
