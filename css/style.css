@@ -1136,7 +1136,7 @@ img.dp{
 }
 
 .btn-danger:hover {
-    background-color: #CC4C4C;
+    background-color: red;
 }
 
 .cart-quantity-input {
@@ -1179,7 +1179,13 @@ img.dp{
 }
 
 .btn-purchase {
+		background-color: #179500;
+		color: white;
     display: block;
     margin: 40px auto 80px auto;
     font-size: 1.75em;
+}
+
+.btn-purchase:hover{
+		background-color: #23e200;
 }
