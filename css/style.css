@@ -1046,6 +1046,7 @@ img.dp{
 /* Shop */
 .shop-section-header{
 	text-align: center;
+	text-decoration: underline;
 }
 .shop-item {
     margin: 30px;
