@@ -35,7 +35,7 @@
                   <li class="active"><a href="index.html">Home</a></li>
 
                   <li>
-                    <a href="">Members</a>
+                    <a href="Members.html">Members</a>
                     <ul>
                       <li><a href="Nayeon.html">Nayeon</a></li>
                       <li><a href="Jeongyeon.html">Jeongyeon</a></li>
@@ -51,7 +51,7 @@
 
                   <li><a href="MV.html">Music Videos</a></li>
 
-                  <li><a href="Shop.php">Merchandise</a></li>
+                  <li><a href="Shop.html">Merchandise</a></li>
 
                   <?php
                       if($_SESSION['Name']){
