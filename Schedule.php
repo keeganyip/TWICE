@@ -46,48 +46,20 @@
                       <li><a href="Dahyun.html">Dahyun</a></li>
                       <li><a href="Chaeyoung.html">Chaeyoung</a></li>
                       <li><a href="Tzuyu.html">Tzuyu</a></li>
-                      <li>
-                        <a href="">Phasellus consequat</a>
-                        <ul>
-                          <li><a href="#">Lorem ipsum dolor</a></li>
-                          <li><a href="#">Phasellus consequat</a></li>
-                          <li><a href="#">Magna phasellus</a></li>
-                          <li><a href="#">Etiam dolore nisl</a></li>
-                          <li><a href="#">Veroeros feugiat</a></li>
-                        </ul>
-                      </li>
                     </ul>
                   </li>
 
                   <li><a href="MV.html">Music Videos</a></li>
 
-                  <li>
-                    <a href="">Dropdown</a>
-                    <ul>
-                      <li><a href="#">Lorem ipsum dolor</a></li>
-                      <li><a href="#">Magna phasellus</a></li>
-                      <li><a href="#">Etiam dolore nisl</a></li>
-                      <li>
-                        <a href="">Phasellus consequat</a>
-                        <ul>
-                          <li><a href="#">Lorem ipsum dolor</a></li>
-                          <li><a href="#">Phasellus consequat</a></li>
-                          <li><a href="#">Magna phasellus</a></li>
-                          <li><a href="#">Etiam dolore nisl</a></li>
-                          <li><a href="#">Veroeros feugiat</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Veroeros feugiat</a></li>
-                    </ul>
-                  </li>
-                  <!---	Welcome Message If Admin Logged In	-->
+                  <li><a href="Shop.php">Merchandise</a></li>
+
                   <?php
-                    if($_SESSION['Name']){
-                      $Name = $_SESSION['Name'];
-                      echo("<li>
-                          Welcome, $Name &nbsp&nbsp&nbsp&nbsp&nbsp
-                          <a href='logout.php' style='display: inline-block; color: white;'><u>Logout</u></a>
-                        </li>");
+                      if($_SESSION['Name']){
+                        $Name = $_SESSION['Name'];
+                        echo("<li>
+                            Welcome, $Name &nbsp&nbsp&nbsp&nbsp&nbsp
+                            <a href='logout.php' style='display: inline-block; color: white;'><u>Logout</u></a>
+                          </li>");
                     }
                   ?>
                 </ul>
