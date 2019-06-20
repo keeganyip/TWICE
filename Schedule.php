@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start();?>
 <html>
   <head>
     <title>Twice Schedule</title>
@@ -79,15 +80,32 @@
                       <li><a href="#">Veroeros feugiat</a></li>
                     </ul>
                   </li>
-                  <li><a href="left-sidebar.html">Left Sidebar</a></li>
-                  <li><a href="right-sidebar.html">Right Sidebar</a></li>
-                  <li><a href="no-sidebar.html">No Sidebar</a></li>
+                  <!---	Welcome Message If Admin Logged In	-->
+                  <?php
+                    if($_SESSION['Name']){
+                      $Name = $_SESSION['Name'];
+                      echo("<li>
+                          Welcome, $Name &nbsp&nbsp&nbsp&nbsp&nbsp
+                          <a href='logout.php' style='display: inline-block; color: white;'><u>Logout</u></a>
+                        </li>");
+                    }
+                  ?>
                 </ul>
               </nav>
 
           </div>
         </div>
       </div>
+
+      <?php
+    		if($_SESSION['Name'] == ''){
+
+    			echo("<script type='text/javascript'>
+    					alert('Your Session Has Expired, Please Login To Continue...');
+    					window.location = 'login.html';</script>");
+
+    		}
+    	?>
 
       <!-- Main -->
   			<div id="main" class="wrapper style4">

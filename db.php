@@ -4,7 +4,7 @@
 	$dbname = "fanclub";
 	$dbuser = "root";
 	$dbpassword = "";
-	$dbconn = mysql_connect($dbhost, $dbuser, $dbpassword) or die (mysql_error());
-	mysql_select_db($dbname, $dbconn);
+	$dbconn = mysqli_connect($dbhost, $dbuser, $dbpassword) or die (mysql_error());
+	mysqli_select_db($dbconn,$dbname);
 
 ?>
