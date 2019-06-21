@@ -1190,3 +1190,21 @@ img.dp{
 .btn-purchase:hover{
 		background-color: #23e200;
 }
+/* Carousel */
+.jR3DCarouselGallery,.jR3DCarouselGalleryCustomeTemplate {
+	margin: 0 auto; /* optional - if want to center align */
+}
+.jR3DCarouselGalleryCustomeTemplate .captions{
+	position: relative;
+	padding: 4px 0;
+	bottom: 27px;
+	background-image:linear-gradient(to right,#FBCEB1,#FF2965);;
+	display:block
+}
+.captions{
+	color: white;
+	text-align: center;
+}
+.jR3DCarouselGalleryCustomeTemplate a{
+	text-decoration: none;
+}
