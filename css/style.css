@@ -628,6 +628,7 @@
 
 				#nav > ul > li.active a {
 					color: white;
+					text-decoration: underline;
 				}
 
 				#nav > ul > li > ul {
@@ -866,6 +867,14 @@
 .TYcolor{
 	background-color: #a0c4f2;
 	font-weight:bold;
+}
+.Me:hover:after {
+	content:" Me";
+}
+#bias{
+		max-width: 100%;
+		width: 200px;
+		height: auto;
 }
 img.dp{
 	max-width: 100%;

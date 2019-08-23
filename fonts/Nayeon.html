@@ -23,18 +23,19 @@
   </noscript>
   <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
   <script type="text/javascript">
+  // If this is the first time someone has visited your site, you want
+// to check to see if pagecount has been defined.  If not, define the pagecount object.
       document.addEventListener("DOMContentLoaded",docIsReady);
-        var nayeon;
       function docIsReady(){
-        nayeon = localStorage.getItem("nayeon");
+        var nayeon = localStorage.getItem("nayeoncount");
+
       if(nayeon == null){
         nayeon = 1;
-        localStorage.setItem("nayeon",Number(nayeon));
       }
       else {
-        nayeon = JSON.parse(nayeon);
-        localStorage.setItem("nayeon",Number(nayeon) + 1);
+        nayeon +=1;
       }
+    console.log(nayeon);
     }
   </script>
 </head>

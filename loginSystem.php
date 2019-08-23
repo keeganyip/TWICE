@@ -21,6 +21,7 @@
 		echo("<script type='text/javascript'>
 		alert('Invalid Password / Username, Please Try Again...');
 		</script>");
+		header("Location: Login.html");
 	}
 
 ?>

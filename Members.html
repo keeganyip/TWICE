@@ -16,6 +16,25 @@
       <link rel="stylesheet" href="css/style.css" />
     </noscript>
     <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded",docIsReady);
+          var ny = parseInt(localStorage.getItem("nayeon")) || 0;
+          var jy = parseInt(localStorage.getItem("jeongyeon")) || 0;
+          var mm = parseInt(localStorage.getItem("momo")) || 0;
+          var sn = parseInt(localStorage.getItem("sana")) || 0;
+          var jh = parseInt(localStorage.getItem("jihyo")) || 0;
+          var mn = parseInt(localStorage.getItem("mina")) || 0;
+          var dh = parseInt(localStorage.getItem("dahyun")) || 0;
+          var ch = parseInt(localStorage.getItem("chaeyoung")) || 0;
+          var ty = parseInt(localStorage.getItem("tzuyu")) || 0;
+        function docIsReady(){
+        var count = [ny,jy,mm,sn,jh,mn,dh,ch,ty];
+
+        var fav = Math.max.apply(null,count);
+        var fav_member = count.indexOf(fav);
+        document.getElementsByClassName("name")[fav_member].innerHTML+= "<img src='images/heart-icon.jpg' width='20px'>"
+      }
+    </script>
   </head>
   <body>
     <!-- Header Wrapper -->
@@ -31,9 +50,11 @@
             <!-- Nav -->
               <nav id="nav">
                 <ul>
-                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="index.html">Home</a></li>
 
-                  <li>
+                  <li><a href="about.html" class="Me"><span>About</span></a></li>
+
+                  <li class="active">
                     <a href="">Members</a>
                     <ul>
                       <li><a href="Nayeon.html">Nayeon</a></li>
@@ -45,43 +66,16 @@
                       <li><a href="Dahyun.html">Dahyun</a></li>
                       <li><a href="Chaeyoung.html">Chaeyoung</a></li>
                       <li><a href="Tzuyu.html">Tzuyu</a></li>
-                      <li>
-                        <a href="">Phasellus consequat</a>
-                        <ul>
-                          <li><a href="#">Lorem ipsum dolor</a></li>
-                          <li><a href="#">Phasellus consequat</a></li>
-                          <li><a href="#">Magna phasellus</a></li>
-                          <li><a href="#">Etiam dolore nisl</a></li>
-                          <li><a href="#">Veroeros feugiat</a></li>
-                        </ul>
-                      </li>
                     </ul>
                   </li>
 
                   <li><a href="MV.html">Music Videos</a></li>
 
-                  <li>
-                    <a href="">Dropdown</a>
-                    <ul>
-                      <li><a href="#">Lorem ipsum dolor</a></li>
-                      <li><a href="#">Magna phasellus</a></li>
-                      <li><a href="#">Etiam dolore nisl</a></li>
-                      <li>
-                        <a href="">Phasellus consequat</a>
-                        <ul>
-                          <li><a href="#">Lorem ipsum dolor</a></li>
-                          <li><a href="#">Phasellus consequat</a></li>
-                          <li><a href="#">Magna phasellus</a></li>
-                          <li><a href="#">Etiam dolore nisl</a></li>
-                          <li><a href="#">Veroeros feugiat</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="#">Veroeros feugiat</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="left-sidebar.html">Left Sidebar</a></li>
-                  <li><a href="right-sidebar.html">Right Sidebar</a></li>
-                  <li><a href="no-sidebar.html">No Sidebar</a></li>
+                  <li><a href="Shop.html">Merchandise</a></li>
+
+                  <li><a href="Login.html">Login</a></li>
+
+                  <li><a href="Register.html">Register</a></li>
                 </ul>
               </nav>
 
@@ -108,39 +102,39 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a href="Nayeon.html" class="NYcolor">Nayeon</a></td>
+                    <td class="name"><a href="Nayeon.html" class="NYcolor">Nayeon</a></td>
                     <td>Lead Vocalist, Lead Dancer, Center</td>
                   </tr>
                   <tr>
-                    <td><a href="Jeongyeon.html" class="JYcolor">Jeongyeon</a></td>
+                    <td class="name"><a href="Jeongyeon.html" class="JYcolor">Jeongyeon</a></td>
                     <td>Lead Vocalist</td>
                   </tr>
                   <tr>
-                    <td><a href="Momo.html" class="MMcolor">Momo</a></td>
+                    <td class="name"><a href="Momo.html" class="MMcolor">Momo</a></td>
                     <td> Main Dancer, Vocalist, Rapper</td>
                   </tr>
                   <tr>
-                    <td><a href="Sana.html" class="SNcolor">Sana</a></td>
+                    <td class="name"><a href="Sana.html" class="SNcolor">Sana</a></td>
                     <td>Vocalist</td>
                   </tr>
                   <tr>
-                    <td><a href="Jihyo.html" class="JHcolor">Jihyo</a></td>
+                    <td class="name"><a href="Jihyo.html" class="JHcolor">Jihyo</a></td>
                     <td>Leader, Main Vocalist</td>
                   </tr>
                   <tr>
-                    <td><a href="Mina.html" class="MNcolor">Mina</a></td>
+                    <td class="name"><a href="Mina.html" class="MNcolor">Mina</a></td>
                     <td>Main Dancer, Vocalist</td>
                   </tr>
                   <tr>
-                    <td><a href="Dahyun.html" class="DHcolor">Dahyun</a></td>
+                    <td class="name"><a href="Dahyun.html" class="DHcolor">Dahyun</a></td>
                     <td>Lead Rapper, Vocalist</td>
                   </tr>
                   <tr>
-                    <td><a href="Chaeyoung.html" class="CYcolor">Chaeyoung</a></td>
+                    <td class="name"><a href="Chaeyoung.html" class="CYcolor">Chaeyoung</a></td>
                     <td>Main Rapper, Vocalist</td>
                   </tr>
                   <tr>
-                    <td><a href="Tzuyu.html" class="TYcolor">Tzuyu</a></td>
+                    <td class="name"><a href="Tzuyu.html" class="TYcolor">Tzuyu</a></td>
                     <td>Lead Dancer, Vocalist, Visual, Maknae</td>
                   </tr>
                 </tbody>

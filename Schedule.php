@@ -34,6 +34,8 @@
                 <ul>
                   <li class="active"><a href="index.html">Home</a></li>
 
+                  <li><a href="about.html" class="Me"><span>About</span></a></li>
+
                   <li>
                     <a href="Members.html">Members</a>
                     <ul>

@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<!--
+	Solarize by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+  <title>About Me</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.dropotron.min.js"></script>
+  <script src="js/skel.min.js"></script>
+  <script src="js/skel-layers.min.js"></script>
+  <script src="js/init.js"></script>
+  <noscript>
+    <link rel="stylesheet" href="css/skel.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </noscript>
+  <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+
+<body>
+
+  <!-- Header Wrapper -->
+  <div class="wrapper style1">
+
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+
+        <!-- Logo -->
+        <h1><a href="index.html" id="logo">TWICEZONE</a></h1>
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li class="active"><a href="about.html" class="Me"><span>About</span></a></li>
+
+            <li>
+              <a href="Members.html">Members</a>
+              <ul>
+				        <li><a href="Nayeon.html">Nayeon</a></li>
+                <li><a href="Jeongyeon.html">Jeongyeon</a></li>
+                <li><a href="Momo.html">Momo</a></li>
+                <li><a href="Sana.html">Sana</a></li>
+                <li><a href="Jihyo.html">Jihyo</a></li>
+                <li><a href="Mina.html">Mina</a></li>
+                <li><a href="Dahyun.html">Dahyun</a></li>
+                <li><a href="Chaeyoung.html">Chaeyoung</a></li>
+                <li><a href="Tzuyu.html">Tzuyu</a></li>
+              </ul>
+            </li>
+
+            <li><a href="MV.html">Music Videos</a></li>
+
+
+            <li><a href="Shop.html">Merchandise</a></li>
+
+            <li><a href="Login.html">Login</a></li>
+
+            <li><a href="Register.html">Register</a></li>
+
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div id="main" class="wrapper style4">
+    <div class="container">
+      <div class="row">
+
+        <!-- Sidebar -->
+        <div id="sidebar" class="4u">
+          <section>
+            <header class="major">
+              <h2>Quick Navigation</h2>
+            </header>
+            <ul class="default">
+              <li><a href="#MyBias">My Bias</a></li>
+              <li><a href="#when">When Did I Become a ONCE</a></li>
+              <li><a href="#why">Why Did I Become a ONCE</a></li>
+              <li><a href="#songs">My Top 5 Twice Songs</a></li>
+              <li><a href="#map">JYP Building</a></li>
+            </ul>
+          </section>
+        </div>
+
+        <!-- Content -->
+        <div id="content" class="8u skel-cell-important">
+          <section id="Profile">
+            <header class="major">
+              <h2>About Me</h2>
+              <span class="byline">How I Became a ONCE</span>
+            </header>
+            <h3 id="MyBias">My Bias</h3>
+            <img src="images/profile/NY.jpg" id="bias">
+            <h3 id="when">When?</h3>
+            <p>Knew about Twice since 2017 but only started listening in 2018 and the visuals and catchy songs piqued my interest.</p>
+            <h3 id="why">Why?</h3>
+            <p>Their genuine personalities which i discovered while watching them on variety shows and radio shows made me attached.</p>
+            <h3 id="songs">Top 5 Songs</h3>
+            <ol>
+              <li>Fancy</li>
+              <li>Likey</li>
+              <li>Yes or Yes</li>
+              <li>One in A Million</li>
+              <li>What is Love?</li>
+            </ol>
+
+            <h3>JYP Building</h3>
+            <div id="map" style="width:100%;height:400px;"></div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function initMap() {
+  // The location of JYP
+  var jyp = {lat: 37.524009, lng:  127.129068};
+  // The map, centered at JYP
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 17, center: jyp});
+  // The marker, positioned at JYP
+  var marker = new google.maps.Marker({position: jyp, map: map, title: "JYP Entertainment"});
+
+  var infowindow = new google.maps.InfoWindow({
+    content: 'JYP Building'
+  });
+
+  marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+}
+</script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCAJ9Fbe-tnY4zne11rz7_ula6-ZZUbaRI&callback=initMap">
+    </script>
+
+
+
+  <!-- Footer -->
+		<div id="footer">
+			<section class="container">
+				<header class="major">
+					<h2>Twice Socials</h2>
+					<span class="byline">Stay connected to TWICE on all channels</span>
+				</header>
+				<ul class="icons">
+					<li class="active"><a href="https://www.facebook.com/JYPETWICE/" class="fa fa-facebook"><span>Facebook</span></a></li>
+					<li><a href="https://twitter.com/JYPETWICE" class="fa fa-twitter"><span>Twitter</span></a></li>
+					<li><a href="https://channels.vlive.tv/EDBF" class="fa fa-video-camera"><span>V LIVE</span></a></li>
+					<li><a href="https://www.youtube.com/channel/UCzgxx_DM2Dcb9Y1spb9mUJA" class="fa fa-youtube"><span>Youtube</span></a></li>
+				</ul>
+				<hr />
+			</section>
+
+    <!-- Copyright -->
+      <div id="copyright">
+        Twice by JYP Entertainment&copy;<br><br>
+        <a href="http://jype.com"><img class="jyp" src="./images/JYP.png" alt="JYP LOGO" /></a>
+        <!--Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>) -->
+      </div>
+  </div>
+
+</body>
+
+</html>
